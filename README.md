@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Pathfinding in Grid-Based Environments using JavaScript and React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this tutorial, we'll explore how to implement pathfinding in a grid-based environment using JavaScript and React. By combining the Breadth-First Search (BFS) algorithm with React components, we can create interactive applications for solving pathfinding problems.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Pathfinding algorithms are used to find the shortest path between two points in a graph or grid. In this tutorial, we'll focus on implementing pathfinding specifically in a grid-based environment. We'll use a two-dimensional array, often referred to as a matrix, to represent the grid.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before we start, make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and install Node.js from [here](https://nodejs.org/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Breadth-First Search (BFS)
 
-### `npm test`
+BFS is a graph traversal algorithm used for exploring nodes in a graph or grid. It starts at a given node (or cell in our case) and explores all its neighbors before moving on to the next level of neighbors. This property makes BFS particularly suitable for finding the shortest path in unweighted graphs or grids.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implementation
 
-### `npm run build`
+We'll implement the BFS algorithm in JavaScript, specifically tailored for grid-based pathfinding. Additionally, we'll use React to create an interactive user interface for visualizing the grid and pathfinding process.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### PathFinder Class
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `PathFinder` class represents our pathfinding algorithm. It contains methods for initializing the grid, performing BFS, and checking the validity of the path.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### React Components
 
-### `npm run eject`
+We'll create React components to visualize the grid and interact with the pathfinding algorithm. These components will display the grid, allow the user to initiate the pathfinding process, and visualize the path once found.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Cloning the Repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get started with the project, you can clone the repository from GitHub using the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/utku-guclu/path-finder.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the Application
 
-## Learn More
+Navigate into the cloned repository directory and install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd path-finder
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After installing the dependencies, you can start the application with the following command:
 
-### Code Splitting
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This will launch the application in your default web browser, and you can interact with the pathfinding visualization.
 
-### Analyzing the Bundle Size
+## Conclusion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+By the end of this tutorial, you'll have a solid understanding of how to implement pathfinding in a grid-based environment using JavaScript and React. You can further extend this project by experimenting with different pathfinding algorithms, adding obstacles or additional features to the grid interface, and exploring more complex grid layouts.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
